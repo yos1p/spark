@@ -19,5 +19,5 @@
 
 # This file is used for Binder integration to install PySpark available in
 # Jupyter notebook.
-export MAVEN_OPTS="-Xmx900m -XX:ReservedCodeCacheSize=850m"
+export MAVEN_OPTS="-Xmx1050m -XX:ReservedCodeCacheSize=1g"
 ./build/mvn -DskipTests -e package && cd python && python setup.py sdist && pip install dist/*.tar.gz
